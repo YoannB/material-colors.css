@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*!
+material-colors.css - http://yoannb.github.io/material-colors.css
+Licensed under the MIT license
+
+Copyright (c) 2015 YoannB
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+$white=#ffffff
+$black=#000000
+$red=#f44336
+$pink=#e91e63
+$purple=#9c27b0
+$deep-purple=#673ab7
+$indigo=#3f51b5
+$blue=#2196f3
+$light-blue=#03a9f4
+$cyan=#00bcd4
+$teal=#009688
+$green=#4caf50
+$light-green=#8bc34a
+$lime=#cddc39
+$yellow=#ffeb3b
+$amber=#ffc107
+$orange=#ff9800
+$deep-orange=#ff5722
+$brown=#795548
+$grey=#9e9e9e
+$blue-grey=#607d8b
+
+$palette_all=('red' $red $white) ('pink' $pink $white) ('purple' $purple $white) ('deep-purple' $deep-purple $white) ('indigo' $indigo $white) ('blue' $blue $white) ('light-blue' $light-blue $white) ('cyan' $cyan $white) ('teal' $teal $white) ('green' $green $white) ('light-green' $light-green $white) ('lime' $lime $black) ('yellow' $yellow $black) ('amber' $amber $black) ('orange' $orange $black) ('deep-orange' $deep-orange $white) ('brown' $brown $white) ('grey' $grey $white) ('blue-grey' $blue-grey $white)
+
+for color_i in $palette_all
+  /** Colors Text **/
+  .{color_i[0]}-text,
+  .{color_i[0]}-text:hover,
+  .{color_i[0]}-text:focus
+    color color_i[1]
+  .{color_i[0]}-text.lighten-1
+    color lighten(color_i[1],10%)
+  .{color_i[0]}-text.lighten-2
+    color lighten(color_i[1],20%)
+  .{color_i[0]}-text.lighten-3
+    color lighten(color_i[1],30%)
+  .{color_i[0]}-text.lighten-4
+    color lighten(color_i[1],40%)
+  .{color_i[0]}-text.lighten-5
+    color lighten(color_i[1],50%)
+  .{color_i[0]}-text.lighten-6
+    color lighten(color_i[1],60%)
+  .{color_i[0]}-text.lighten-7
+    color lighten(color_i[1],70%)
+  .{color_i[0]}-text.lighten-8
+    color lighten(color_i[1],80%)
+  .{color_i[0]}-text.darken-1
+    color darken(color_i[1],10%)
+  .{color_i[0]}-text.darken-2
+    color darken(color_i[1],20%)
+  .{color_i[0]}-text.darken-3
+    color darken(color_i[1],30%)
+  .{color_i[0]}-text.darken-4
+    color darken(color_i[1],40%)
+  .{color_i[0]}-text.darken-5
+    color darken(color_i[1],50%)
+  .{color_i[0]}-text.darken-6
+    color darken(color_i[1],60%)
+  /** Colors Background **/
+  .bg-{color_i[0]}
+    background-color color_i[1]
+    color color_i[2]
+  .bg-{color_i[0]}:hover,
+  .bg-{color_i[0]}:focus
+    color color_i[2]
+  .bg-{color_i[0]}.lighten-1
+    background-color lighten(color_i[1],10%)
+  .bg-{color_i[0]}.lighten-2
+    background-color lighten(color_i[1],20%)
+  .bg-{color_i[0]}.lighten-3
+    background-color lighten(color_i[1],30%)
+  .bg-{color_i[0]}.lighten-4
+    background-color lighten(color_i[1],40%)
+  .bg-{color_i[0]}.lighten-5
+    background-color lighten(color_i[1],50%)
+  .bg-{color_i[0]}.lighten-6
+    background-color lighten(color_i[1],60%)
+  .bg-{color_i[0]}.lighten-7
+    color darken(color_i[1],60%)
+    background-color lighten(color_i[1],70%)
+  .bg-{color_i[0]}.lighten-8
+    color darken(color_i[1],50%)
+    background-color lighten(color_i[1],80%)
+  .bg-{color_i[0]}.darken-1
+    color white
+    background-color darken(color_i[1],10%)
+  .bg-{color_i[0]}.darken-2
+    color white
+    background-color darken(color_i[1],20%)
+  .bg-{color_i[0]}.darken-3
+    color white
+    background-color darken(color_i[1],30%)
+  .bg-{color_i[0]}.darken-4
+    color white
+    background-color darken(color_i[1],40%)
+  .bg-{color_i[0]}.darken-5
+    color white
+    background-color darken(color_i[1],50%)
+  .bg-{color_i[0]}.darken-6
+    color white
+    background-color darken(color_i[1],60%)
+  /** Colors Border **/
+  .border-{color_i[0]}
+    border 1px solid color_i[1]
+  .border-{color_i[0]}.lighten-1
+    border 1px solid lighten(color_i[1],10%)
+  .border-{color_i[0]}.lighten-2
+    border 1px solid lighten(color_i[1],20%)
+  .border-{color_i[0]}.lighten-3
+    border 1px solid lighten(color_i[1],30%)
+  .border-{color_i[0]}.lighten-4
+    border 1px solid lighten(color_i[1],40%)
+  .border-{color_i[0]}.lighten-5
+    border 1px solid lighten(color_i[1],50%)
+  .border-{color_i[0]}.lighten-6
+    border 1px solid lighten(color_i[1],60%)
+  .border-{color_i[0]}.lighten-7
+    color darken(color_i[1],60%)
+    border 1px solid lighten(color_i[1],70%)
+  .border-{color_i[0]}.lighten-8
+    color darken(color_i[1],50%)
+    border 1px solid lighten(color_i[1],80%)
+  .border-{color_i[0]}.darken-1
+    border 1px solid darken(color_i[1],10%)
+  .border-{color_i[0]}.darken-2
+    border 1px solid darken(color_i[1],20%)
+  .border-{color_i[0]}.darken-3
+    border 1px solid darken(color_i[1],30%)
+  .border-{color_i[0]}.darken-4
+    border 1px solid darken(color_i[1],40%)
+  .border-{color_i[0]}.darken-5
+    border 1px solid darken(color_i[1],50%)
+  .border-{color_i[0]}.darken-6
+    border 1px solid darken(color_i[1],60%)
+  /** Colors badges **/
+  .label-{color_i[0]}
+    background-color color_i[1]
+    color color_i[2]
+  .label-{color_i[0]}.lighten-1
+    background-color lighten(color_i[1],10%)
+  .label-{color_i[0]}.lighten-2
+    background-color lighten(color_i[1],20%)
+  .label-{color_i[0]}.lighten-3
+    background-color lighten(color_i[1],30%)
+  .label-{color_i[0]}.lighten-4
+    background-color lighten(color_i[1],40%)
+  .label-{color_i[0]}.lighten-5
+    background-color lighten(color_i[1],50%)
+  .label-{color_i[0]}.lighten-6
+    background-color lighten(color_i[1],60%)
+  .label-{color_i[0]}.lighten-7
+    color darken(color_i[1],60%)
+    background-color lighten(color_i[1],70%)
+  .label-{color_i[0]}.lighten-8
+    color darken(color_i[1],50%)
+    background-color lighten(color_i[1],80%)
+  .label-{color_i[0]}.darken-1
+    background-color darken(color_i[1],10%)
+  .label-{color_i[0]}.darken-2
+    background-color darken(color_i[1],20%)
+  .label-{color_i[0]}.darken-3
+    background-color darken(color_i[1],30%)
+  .label-{color_i[0]}.darken-4
+    background-color darken(color_i[1],40%)
+  .label-{color_i[0]}.darken-5
+    background-color darken(color_i[1],50%)
+  .label-{color_i[0]}.darken-6
+    background-color darken(color_i[1],60%)

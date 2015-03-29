@@ -1,0 +1,13 @@
+{
+  "name": "material-colors.css",
+  "version": "1.0.0",
+  "main": "./dist/material-colors.min.css",
+  "ignore": [
+    ".*",
+    "src",
+    "*.yml",
+    "Gemfile",
+    "Gemfile.lock",
+    "*.md"
+  ]
+}
