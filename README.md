@@ -19,6 +19,16 @@ You can use material-colors.css with Bootstrap or all other CSS frameworks. Boot
 </button>
 ```
 
+##Bower
+
+Add dependency in your bower.json : 
+
+```
+"material-colors.css": "~1.0.0"
+```
+
+Or do `bower install material-colors.css --save`.
+
 ## Palette
 
 ![palette](./palette.png)
