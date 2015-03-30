@@ -1,0 +1,30 @@
+header {
+	text-align:center;
+}
+
+header h1 {
+	font-weight: 700;
+	font-size: 5em;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+header h1 span{
+	font-weight: normal;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 4px;
+}
+
+p {
+	margin:0;
+	padding: 15px;
+}
+
+footer,
+p.meta {
+	font-size: 16px;
+	text-align:center;
+}
