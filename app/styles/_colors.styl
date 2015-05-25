@@ -35,6 +35,23 @@ $blue-grey=#607d8b
 
 $palette_all=('red' $red $white) ('pink' $pink $white) ('purple' $purple $white) ('deep-purple' $deep-purple $white) ('indigo' $indigo $white) ('blue' $blue $white) ('light-blue' $light-blue $white) ('cyan' $cyan $white) ('teal' $teal $white) ('green' $green $white) ('light-green' $light-green $white) ('lime' $lime $black) ('yellow' $yellow $black) ('amber' $amber $black) ('orange' $orange $black) ('deep-orange' $deep-orange $white) ('brown' $brown $white) ('grey' $grey $white) ('blue-grey' $blue-grey $white)
 
+.white-text
+  color white
+.black-text
+  color black
+
+.bg-white
+  background-color white
+  color black
+.bg-black
+  background-color black
+  color white
+
+.border-white
+  border-color white
+.border-black
+  border-color black
+
 for color_i in $palette_all
   /** Colors Text **/
   .{color_i[0]}-text,
