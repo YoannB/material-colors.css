@@ -29,10 +29,8 @@ angular.module('materialColors', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSaniti
 
         // Collapsing the menu after navigation
         $scope.$on('$stateChangeSuccess', function () {
-            //    $scope.isCollapsed = false;
             $scope.menuOpen = false;
             $scope.menuOpenRight = false;
-            $scope.dropdownFbtnOpen = false;
         });
 
         // observe scroll of window
