@@ -50,7 +50,7 @@ angular.module('materialColors', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSaniti
                 body.removeClass('page-scroll');
             }
         });
-        $scope.scrollTop = function () {
+        $rootScope.scrollTop = function () {
             $location.hash();
             $anchorScroll();
         };
