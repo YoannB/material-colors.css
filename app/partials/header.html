@@ -1,0 +1,28 @@
+<section class="container-fluid" data-ng-controller="MenuCtrl">
+    <ul class="nav nav-list pull-left">
+        <li data-ng-class="{ 'active': menuOpen }">
+            <a class="menu-toggle" href="javascript:void(0)" data-ng-click="toggleMenu()" title="Menu">
+                <span class="sr-only">Menu</span>
+            <span class="navbar-bars icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </span>
+            <span class="navbar-close icon">
+                <i class="fa fa-close fa-2x"></i>
+            </span>
+            </a>
+        </li>
+    </ul>
+    <ul class="nav nav-list pull-right">
+        <li data-ng-class="{ 'active': menuOpenRight }">
+            <a class="menu-toggle" href="javascript:void(0)" data-ng-click="toggleProfile()" title="Profile">
+                <span class="sr-only">Yoann Barbier</span>
+            <span class="avatar">
+                <i class="fa fa-user fa-2x"></i>
+            </span>
+            <span class="navbar-close icon">
+                <i class="fa fa-close fa-2x"></i>
+            </span>
+            </a>
+        </li>
+    </ul>
+</section>
